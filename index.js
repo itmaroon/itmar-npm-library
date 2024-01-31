@@ -1,5 +1,7 @@
 import { useRef, useEffect, useState } from '@wordpress/element';
 import isEqual from 'lodash/isEqual';
+import { ServerStyleSheet } from 'styled-components';
+import { renderToString } from 'react-dom/server';
 
 //useRefで参照したDOM要素の大きさを取得するカスタムフック
 export function useElementWidth() {
